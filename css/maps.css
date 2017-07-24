@@ -1,0 +1,66 @@
+#cities
+{
+	background:#1F398C;
+}
+.zero-right-padding {
+	padding-right: 0px;
+}
+#cities .section-desc h1.section-heading {
+	color: #fff;
+}
+#cities .seperator {
+	margin-left: 62px;	
+	background: url(../images/locksign-white.png) no-repeat;
+}
+#cities .seperator:before,
+#cities .seperator:after {
+	background: #fff;
+}
+#cities .section-desc .section-text {
+	padding: 0px;
+	color: #fff;
+}
+#map
+{
+	height: 670px;
+}
+#cities-text
+{
+	padding-top:90px;
+}
+#cities-text ul
+{
+  -moz-column-count:2;
+  -webkit-column-count:3;
+  column-count:2;
+}
+ul#cities-list
+{
+	margin-top:50px;
+	height: 340px;
+	overflow: auto;
+}
+ul#cities-list li
+{
+	font-family: "Roboto",sans-serif;
+	font-weight:400;
+	color:#fff;
+	font-size:14px;
+	line-height:35px;
+}
+ul#cities-list.pg-location-city li {
+	color: #1f398c;
+}
+ul#cities-list li i.fa
+{
+	margin-right:10px;
+	/*color:#fff;*/
+}
+ul#cities-list li.disable
+{
+	color:#8a8a8a;
+}
+ul#cities-list li.disable i.fa
+{
+	color:#8a8a8a;
+}

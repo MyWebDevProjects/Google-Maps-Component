@@ -39,6 +39,7 @@ ul#cities-list
 	margin-top:50px;
 	height: 340px;
 	overflow: auto;
+    list-style: none;
 }
 ul#cities-list li
 {

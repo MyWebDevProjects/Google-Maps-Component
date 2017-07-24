@@ -1,6 +1,6 @@
 #cities
 {
-	background:#1F398C;
+background:#1F398C;/*	Change background to whatever you want  */
 }
 .zero-right-padding {
 	padding-right: 0px;
@@ -10,7 +10,7 @@
 }
 #cities .seperator {
 	margin-left: 62px;	
-	background: url(../images/locksign-white.png) no-repeat;
+/*	background: url(../images/locksign-white.png) no-repeat;*/
 }
 #cities .seperator:before,
 #cities .seperator:after {

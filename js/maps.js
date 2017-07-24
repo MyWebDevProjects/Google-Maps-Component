@@ -2,52 +2,7 @@
     (function($) {
       "use strict";
 
-      $('#estimation-form').validate({
-        submitHandler: function(){
-          var curForm = $('#estimation-form');
-          $("<div />").addClass("formOverlay").appendTo(curForm);  
-            
-             $.ajax({
-              url: 'mail.php',
-              type: 'POST',
-              data: curForm.serialize(),
-              success: function(data) {
-              var res=data.split("::");
-              curForm.find("div.formOverlay").remove();
-              curForm.prev('.expMessage').html(res[1]);
-              if(res[0]=='Success')
-              {
-                 curForm.remove(); 
-                 curForm.prev('.expMessage').html('');
-              }              
-              }
-             });
-          return false;
-        } 
-      });
-      $('#subscribe-form').validate({
-        submitHandler: function(){
-          var curForm = $('#subscribe-form');
-          $("<div />").addClass("formOverlay").appendTo(curForm);  
-            
-             $.ajax({
-              url: 'mail.php',
-              type: 'POST',
-              data: curForm.serialize(),
-              success: function(data) {
-              var res=data.split("::");
-              curForm.find("div.formOverlay").remove();
-              curForm.prev('.expMessage').html(res[1]);
-              if(res[0]=='Success')
-              {
-                 curForm.remove(); 
-                 curForm.prev('.expMessage').html('');
-              }              
-              }
-             });
-          return false;
-        } 
-      })
+
 
       //initmap();      
       google.maps.event.addDomListener(window, 'load', initmap);
